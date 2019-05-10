@@ -1,50 +1,100 @@
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+	font: 14px "Century Gothic", Futura, sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
-ol, ul {
-  padding-left: 30px;
+header {
+	background-color: grey;
+	padding: 10px;
+	margin: 0;
 }
 
-.board-row:after {
-  clear: both;
-  content: "";
-  display: table;
+h1 {
+	color: white;
+	padding-left: 20px;
 }
 
-.status {
-  margin-bottom: 10px;
+#root {
+	padding-bottom: 20px;
 }
 
-.square {
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;
+.tabs {
+	width: 50%;
+	border: none;
+	background-color: grey;
+	color: white;
+	padding: 5px;
 }
 
-.square:focus {
-  outline: none;
+#active-tab {
+	background-color: #666666;
 }
 
-.kbd-navigation .square:focus {
-  background: #ddd;
+.main-graph {
+	padding-top: 50px;
+	padding-left: 200px;
+	padding-right: 200px;
+	text-align: center;
 }
 
-.game {
-  display: flex;
-  flex-direction: row;
+.graph-controls h3,select,input {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 10px;
 }
 
-.game-info {
-  margin-left: 20px;
+.graph-controls select {
+	width: 77px;
+}
+
+#from-label {
+	margin-left: 40px;
+}
+
+.main-convert {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.convert-div {
+	display: inline-block;
+}
+
+input {
+	border-color: black;
+	border-style: solid;
+	background-color: white;
+	color: black;
+}
+
+select {
+	border-color: black;
+	border-style: solid;
+	background-color: white;
+	color: black;
+}
+
+.convert-div button {
+	border-color: black;
+	border-style: solid;
+	background-color: white;
+	color: black;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.convert-div button:hover {
+	background-color: black;
+	color: white;
+}
+
+.convert-div h3 {
+	display: inline-block;
+}
+
+.convert-div * {
+	margin: 10px;
 }
